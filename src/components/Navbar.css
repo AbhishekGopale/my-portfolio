@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 30px; /* Add padding on the left and right sides of the navbar */
+  position: relative;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping of items */
+  justify-content: flex-start; /* Align items to the start (left) */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  gap: 10px; /* Add space between the buttons */
+}
+
+.navbar li {
+  margin: 0; /* Remove any individual margin from the list items */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: lighter; /* Lighter font */
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Active link styles */
+.navbar a.active-link {
+  background-color: #ff6600;
+  border-radius: 5px;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #ff6600;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .navbar ul {
+      flex-direction: row;
+      justify-content: space-between; /* Ensure side-by-side layout on larger screens */
+  }
+
+  .navbar a {
+      font-size: 18px;
+      font-weight: normal; /* Normal font weight on desktop */
+  }
+
+  /* Remove horizontal scrolling on desktop */
+  .navbar ul {
+      overflow-x: unset;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .navbar ul {
+      flex-direction: row; /* Keep items in a row */
+      justify-content: flex-start; /* Align the items to the left */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      gap: 10px; /* Adjust the space between items on mobile */
+  }
+
+  .navbar a {
+      font-size: 16px;  /* Smaller font size on mobile */
+      font-weight: lighter;  /* Lighter font on mobile */
+      padding: 10px 15px;  /* More padding for easier tapping */
+  }
+
+  /* Adjust margin for mobile */
+  .navbar li {
+      margin: 0 5px; /* Smaller margin on mobile for better fitting */
+  }
+}

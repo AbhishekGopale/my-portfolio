@@ -1,0 +1,27 @@
+/* ResumePage.css */
+
+/* Styling for the Resume page */
+.resume {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  a:hover {
+    background-color: #0056b3;
+  }
+  

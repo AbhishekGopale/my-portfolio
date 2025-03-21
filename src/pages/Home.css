@@ -1,0 +1,136 @@
+/* Global styles */
+.home {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between the image and text */
+    padding: 20px;
+    min-height: 80vh; /* Set a minimum vertical height */
+    height: auto; /* Allow content to adjust vertically */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.home-left {
+    flex: 1; /* Left section will take up 1/2 of the space */
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: flex-start; /* Move the image to the top */
+    min-height: 100%; /* Ensure the image container is full height */
+    padding-top: 10px; /* Add a little padding from the top */
+}
+
+.home-right {
+    flex: 1; /* Right section will take up the other half */
+    padding: 20px;
+    min-height: 100%; /* Ensure the text container is full height */
+}
+
+/* Profile Image Styling */
+.profile-image {
+    width: 100%; /* Make image fill container's width */
+    height: auto; /* Let the height adjust naturally */
+    border-radius: 30%; /* Circular image */
+    object-position: top 20%; /* Focus on the face: position the image 20% down from the top */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+/* Heading and text */
+.home h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.home p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Skills and Programming Languages Sections */
+.skills-section, .languages-section {
+    margin-top: 20px;
+    background-color: #f4f4f4; /* Light background for better visibility */
+    padding: 15px; /* Add padding around text */
+    border-radius: 8px; /* Rounded corners for a clean look */
+}
+
+.skills-section h2, .languages-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px; /* Space between the title and list */
+}
+
+.skills-section ul, .languages-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-section li, .languages-section li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.skills-section ul li::before, .languages-section ul li::before {
+    content: '• ';
+    color: #4CAF50; /* Green bullet for the list items */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack the content vertically */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .home-left,
+    .home-right {
+        flex: 1 1 100%; /* Allow both sections to take up full width */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+
+    .profile-image {
+        width: 80%; /* Make image larger on mobile */
+        height: auto; /* Let the height adjust naturally */
+        margin-bottom: 20px; /* Add space between image and text */
+        object-position: top 20%; /* Keep the face focused on mobile */
+    }
+
+    .home h1 {
+        font-size: 1.8rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    /* Skills and Languages Section Adjustments for Mobile */
+    .skills-section h2,
+    .languages-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .skills-section li,
+    .languages-section li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding: 10px; /* Less padding on very small screens */
+    }
+
+    .profile-image {
+        width: 90%; /* Make image even larger on very small devices */
+        height: auto; /* Let the height adjust naturally */
+    }
+
+    .skills-section h2,
+    .languages-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .skills-section li,
+    .languages-section li {
+        font-size: 0.9rem;
+    }
+}
