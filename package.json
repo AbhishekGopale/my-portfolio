@@ -16,7 +16,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-"homepage": "https://abhishekgopale.github.io/my-portfolio",
+"homepage": "https://github.com/AbhishekGopale/my-portfolio.git",
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build",
   "scripts": {
@@ -46,3 +46,4 @@
     ]
   }
 }
+
