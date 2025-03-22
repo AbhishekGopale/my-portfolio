@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AbhishekGopale/my-portfolio/static/css/main.4f7d1ed6.css",
+    "main.js": "/AbhishekGopale/my-portfolio/static/js/main.0b22c6fe.js",
+    "static/js/453.acca0757.chunk.js": "/AbhishekGopale/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/dragon.png": "/AbhishekGopale/my-portfolio/static/media/dragon.a1600a975e6913b24fc7.png",
+    "static/media/online-exams.jpg": "/AbhishekGopale/my-portfolio/static/media/online-exams.8e7171e859a478bbf71e.jpg",
+    "static/media/eCommerce.jpg": "/AbhishekGopale/my-portfolio/static/media/eCommerce.5dcfa536426a5b14f351.jpg",
+    "static/media/Bambari.jpg": "/AbhishekGopale/my-portfolio/static/media/Bambari.3c01f3d886539658e501.jpg",
+    "static/media/SQL.jpg": "/AbhishekGopale/my-portfolio/static/media/SQL.074affb12d111debcfef.jpg",
+    "static/media/my_image.jpeg": "/AbhishekGopale/my-portfolio/static/media/my_image.3c8ddee7c4a8c0621254.jpeg",
+    "static/media/ML.jpg": "/AbhishekGopale/my-portfolio/static/media/ML.3afd61cfb397e619a1ba.jpg",
+    "index.html": "/AbhishekGopale/my-portfolio/index.html",
+    "main.4f7d1ed6.css.map": "/AbhishekGopale/my-portfolio/static/css/main.4f7d1ed6.css.map",
+    "main.0b22c6fe.js.map": "/AbhishekGopale/my-portfolio/static/js/main.0b22c6fe.js.map",
+    "453.acca0757.chunk.js.map": "/AbhishekGopale/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f7d1ed6.css",
+    "static/js/main.0b22c6fe.js"
+  ]
+}
